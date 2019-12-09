@@ -1,7 +1,10 @@
-package cn.qshui.common_base.base;
+package com.qscode.common_base.base;
 
+/**
+ * 统一返回格式
+ * @param <T>
+ */
 public class BaseRes<T> {
-
     private String code;
     private String message;
     private T data;
@@ -33,7 +36,7 @@ public class BaseRes<T> {
 
 
     public  void fail(String code,String message){
-       this.code = code;
-       this.message = message;
+        this.code = code;
+        this.message = message;
     }
 }
